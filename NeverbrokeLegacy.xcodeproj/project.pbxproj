@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		620A50C323A561C4001322F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A50C223A561C4001322F1 /* AppDelegate.swift */; };
+		620A50CC23A561C8001322F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620A50CB23A561C8001322F1 /* Assets.xcassets */; };
+		620A50DA23A56382001322F1 /* NBTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A50D723A56382001322F1 /* NBTransaction.swift */; };
+		620A50DB23A56382001322F1 /* NBCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A50D823A56382001322F1 /* NBCategory.swift */; };
+		620A50DC23A56382001322F1 /* NBStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A50D923A56382001322F1 /* NBStore.swift */; };
+		620A515523A57145001322F1 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514123A57145001322F1 /* TransactionTableViewController.swift */; };
+		620A515623A57145001322F1 /* CategoryPickTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514223A57145001322F1 /* CategoryPickTableViewController.swift */; };
+		620A515823A57145001322F1 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514423A57145001322F1 /* TransactionTableViewCell.swift */; };
+		620A515923A57145001322F1 /* BudgetItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514523A57145001322F1 /* BudgetItemTableViewCell.swift */; };
+		620A515B23A57145001322F1 /* SpendCategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514723A57145001322F1 /* SpendCategoriesTableViewController.swift */; };
+		620A515C23A57145001322F1 /* SpendDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514823A57145001322F1 /* SpendDataTableViewController.swift */; };
+		620A515E23A57145001322F1 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514A23A57145001322F1 /* CategoryTableViewCell.swift */; };
+		620A515F23A57145001322F1 /* TransactionAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514B23A57145001322F1 /* TransactionAddTableViewController.swift */; };
+		620A516123A57145001322F1 /* TransactionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514D23A57145001322F1 /* TransactionsTableViewController.swift */; };
+		620A516223A57145001322F1 /* PerDiemCategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514E23A57145001322F1 /* PerDiemCategoriesTableViewController.swift */; };
+		620A516323A57145001322F1 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A514F23A57145001322F1 /* ChartViewController.swift */; };
+		620A516523A57145001322F1 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A515123A57145001322F1 /* BarChartView.swift */; };
+		620A516623A57145001322F1 /* BudgetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A515223A57145001322F1 /* BudgetTableViewController.swift */; };
+		620A516723A57145001322F1 /* TransactionAdd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620A515323A57145001322F1 /* TransactionAdd.storyboard */; };
+		620A516823A57145001322F1 /* TransactionsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620A515423A57145001322F1 /* TransactionsSplitViewController.swift */; };
+		620A516923A5716F001322F1 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620A516B23A5716F001322F1 /* Budget.storyboard */; };
+		620A516C23A5717A001322F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620A516E23A5717A001322F1 /* LaunchScreen.storyboard */; };
+		620A516F23A5717E001322F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620A517123A5717E001322F1 /* Main.storyboard */; };
+		620A517223A57184001322F1 /* SpendData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620A517423A57184001322F1 /* SpendData.storyboard */; };
+		620A517523A57188001322F1 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620A517723A57188001322F1 /* Transactions.storyboard */; };
+		620A519623A575FA001322F1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 620A519523A575FA001322F1 /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		620A50BF23A561C4001322F1 /* Neverbroke Legacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neverbroke Legacy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620A50C223A561C4001322F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		620A50CB23A561C8001322F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		620A50D023A561C8001322F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620A50D723A56382001322F1 /* NBTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBTransaction.swift; sourceTree = "<group>"; };
+		620A50D823A56382001322F1 /* NBCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBCategory.swift; sourceTree = "<group>"; };
+		620A50D923A56382001322F1 /* NBStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBStore.swift; sourceTree = "<group>"; };
+		620A514123A57145001322F1 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
+		620A514223A57145001322F1 /* CategoryPickTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickTableViewController.swift; sourceTree = "<group>"; };
+		620A514423A57145001322F1 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		620A514523A57145001322F1 /* BudgetItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetItemTableViewCell.swift; sourceTree = "<group>"; };
+		620A514723A57145001322F1 /* SpendCategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendCategoriesTableViewController.swift; sourceTree = "<group>"; };
+		620A514823A57145001322F1 /* SpendDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendDataTableViewController.swift; sourceTree = "<group>"; };
+		620A514A23A57145001322F1 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		620A514B23A57145001322F1 /* TransactionAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionAddTableViewController.swift; sourceTree = "<group>"; };
+		620A514D23A57145001322F1 /* TransactionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewController.swift; sourceTree = "<group>"; };
+		620A514E23A57145001322F1 /* PerDiemCategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerDiemCategoriesTableViewController.swift; sourceTree = "<group>"; };
+		620A514F23A57145001322F1 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		620A515123A57145001322F1 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		620A515223A57145001322F1 /* BudgetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetTableViewController.swift; sourceTree = "<group>"; };
+		620A515323A57145001322F1 /* TransactionAdd.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TransactionAdd.storyboard; sourceTree = "<group>"; };
+		620A515423A57145001322F1 /* TransactionsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsSplitViewController.swift; sourceTree = "<group>"; };
+		620A516A23A5716F001322F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Budget.storyboard; sourceTree = "<group>"; };
+		620A516D23A5717A001322F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		620A517023A5717E001322F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		620A517323A57184001322F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SpendData.storyboard; sourceTree = "<group>"; };
+		620A517623A57188001322F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Transactions.storyboard; sourceTree = "<group>"; };
+		620A519523A575FA001322F1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		620A50BC23A561C4001322F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		620A50B623A561C4001322F1 = {
+			isa = PBXGroup;
+			children = (
+				620A50C123A561C4001322F1 /* src */,
+				620A50C023A561C4001322F1 /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		620A50C023A561C4001322F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				620A50BF23A561C4001322F1 /* Neverbroke Legacy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		620A50C123A561C4001322F1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				620A517823A57199001322F1 /* ui */,
+				620A517923A571C3001322F1 /* control */,
+				620A50D623A56374001322F1 /* model */,
+				620A50C223A561C4001322F1 /* AppDelegate.swift */,
+				620A50CB23A561C8001322F1 /* Assets.xcassets */,
+				620A519523A575FA001322F1 /* Settings.bundle */,
+				620A50D023A561C8001322F1 /* Info.plist */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		620A50D623A56374001322F1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				620A50D823A56382001322F1 /* NBCategory.swift */,
+				620A50D923A56382001322F1 /* NBStore.swift */,
+				620A50D723A56382001322F1 /* NBTransaction.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		620A517823A57199001322F1 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				620A516B23A5716F001322F1 /* Budget.storyboard */,
+				620A516E23A5717A001322F1 /* LaunchScreen.storyboard */,
+				620A517123A5717E001322F1 /* Main.storyboard */,
+				620A517423A57184001322F1 /* SpendData.storyboard */,
+				620A515323A57145001322F1 /* TransactionAdd.storyboard */,
+				620A517723A57188001322F1 /* Transactions.storyboard */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		620A517923A571C3001322F1 /* control */ = {
+			isa = PBXGroup;
+			children = (
+				620A515123A57145001322F1 /* BarChartView.swift */,
+				620A514523A57145001322F1 /* BudgetItemTableViewCell.swift */,
+				620A515223A57145001322F1 /* BudgetTableViewController.swift */,
+				620A514223A57145001322F1 /* CategoryPickTableViewController.swift */,
+				620A514A23A57145001322F1 /* CategoryTableViewCell.swift */,
+				620A514F23A57145001322F1 /* ChartViewController.swift */,
+				620A514E23A57145001322F1 /* PerDiemCategoriesTableViewController.swift */,
+				620A514723A57145001322F1 /* SpendCategoriesTableViewController.swift */,
+				620A514823A57145001322F1 /* SpendDataTableViewController.swift */,
+				620A514B23A57145001322F1 /* TransactionAddTableViewController.swift */,
+				620A515423A57145001322F1 /* TransactionsSplitViewController.swift */,
+				620A514D23A57145001322F1 /* TransactionsTableViewController.swift */,
+				620A514423A57145001322F1 /* TransactionTableViewCell.swift */,
+				620A514123A57145001322F1 /* TransactionTableViewController.swift */,
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		620A50BE23A561C4001322F1 /* NeverbrokeLegacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 620A50D323A561C8001322F1 /* Build configuration list for PBXNativeTarget "NeverbrokeLegacy" */;
+			buildPhases = (
+				620A50BB23A561C4001322F1 /* Sources */,
+				620A50BC23A561C4001322F1 /* Frameworks */,
+				620A50BD23A561C4001322F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeverbrokeLegacy;
+			productName = neverbrokelegacy;
+			productReference = 620A50BF23A561C4001322F1 /* Neverbroke Legacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		620A50B723A561C4001322F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Diego Lavalle";
+				TargetAttributes = {
+					620A50BE23A561C4001322F1 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 620A50BA23A561C4001322F1 /* Build configuration list for PBXProject "NeverbrokeLegacy" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 620A50B623A561C4001322F1;
+			productRefGroup = 620A50C023A561C4001322F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				620A50BE23A561C4001322F1 /* NeverbrokeLegacy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		620A50BD23A561C4001322F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620A519623A575FA001322F1 /* Settings.bundle in Resources */,
+				620A516723A57145001322F1 /* TransactionAdd.storyboard in Resources */,
+				620A517523A57188001322F1 /* Transactions.storyboard in Resources */,
+				620A50CC23A561C8001322F1 /* Assets.xcassets in Resources */,
+				620A516C23A5717A001322F1 /* LaunchScreen.storyboard in Resources */,
+				620A516F23A5717E001322F1 /* Main.storyboard in Resources */,
+				620A516923A5716F001322F1 /* Budget.storyboard in Resources */,
+				620A517223A57184001322F1 /* SpendData.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		620A50BB23A561C4001322F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				620A50DA23A56382001322F1 /* NBTransaction.swift in Sources */,
+				620A516123A57145001322F1 /* TransactionsTableViewController.swift in Sources */,
+				620A516623A57145001322F1 /* BudgetTableViewController.swift in Sources */,
+				620A515823A57145001322F1 /* TransactionTableViewCell.swift in Sources */,
+				620A50DB23A56382001322F1 /* NBCategory.swift in Sources */,
+				620A50DC23A56382001322F1 /* NBStore.swift in Sources */,
+				620A515C23A57145001322F1 /* SpendDataTableViewController.swift in Sources */,
+				620A516223A57145001322F1 /* PerDiemCategoriesTableViewController.swift in Sources */,
+				620A515B23A57145001322F1 /* SpendCategoriesTableViewController.swift in Sources */,
+				620A515E23A57145001322F1 /* CategoryTableViewCell.swift in Sources */,
+				620A516823A57145001322F1 /* TransactionsSplitViewController.swift in Sources */,
+				620A50C323A561C4001322F1 /* AppDelegate.swift in Sources */,
+				620A515F23A57145001322F1 /* TransactionAddTableViewController.swift in Sources */,
+				620A515923A57145001322F1 /* BudgetItemTableViewCell.swift in Sources */,
+				620A515623A57145001322F1 /* CategoryPickTableViewController.swift in Sources */,
+				620A515523A57145001322F1 /* TransactionTableViewController.swift in Sources */,
+				620A516323A57145001322F1 /* ChartViewController.swift in Sources */,
+				620A516523A57145001322F1 /* BarChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		620A516B23A5716F001322F1 /* Budget.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				620A516A23A5716F001322F1 /* Base */,
+			);
+			name = Budget.storyboard;
+			sourceTree = "<group>";
+		};
+		620A516E23A5717A001322F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				620A516D23A5717A001322F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		620A517123A5717E001322F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				620A517023A5717E001322F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		620A517423A57184001322F1 /* SpendData.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				620A517323A57184001322F1 /* Base */,
+			);
+			name = SpendData.storyboard;
+			sourceTree = "<group>";
+		};
+		620A517723A57188001322F1 /* Transactions.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				620A517623A57188001322F1 /* Base */,
+			);
+			name = Transactions.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		620A50D123A561C8001322F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		620A50D223A561C8001322F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		620A50D423A561C8001322F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92XVGR6M56;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.neverbrokelegacy;
+				PRODUCT_NAME = "Neverbroke Legacy";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		620A50D523A561C8001322F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92XVGR6M56;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegolavalle.neverbrokelegacy;
+				PRODUCT_NAME = "Neverbroke Legacy";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		620A50BA23A561C4001322F1 /* Build configuration list for PBXProject "NeverbrokeLegacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620A50D123A561C8001322F1 /* Debug */,
+				620A50D223A561C8001322F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		620A50D323A561C8001322F1 /* Build configuration list for PBXNativeTarget "NeverbrokeLegacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				620A50D423A561C8001322F1 /* Debug */,
+				620A50D523A561C8001322F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 620A50B723A561C4001322F1 /* Project object */;
+}

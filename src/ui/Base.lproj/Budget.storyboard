@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SLN-7s-lCB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Budget-->
+        <scene sceneID="9DB-GM-aGt">
+            <objects>
+                <tableViewController id="bED-zM-urq" customClass="BudgetTableViewController" customModule="Neverbroke" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="73" sectionHeaderHeight="18" sectionFooterHeight="18" id="wdl-eE-Qox">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="m9U-Ol-ZmY">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List your spending categories and assign each an integer monthly budget" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyd-8F-HWa">
+                                    <rect key="frame" x="8" y="8" width="359" height="28"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="vyd-8F-HWa" firstAttribute="top" secondItem="m9U-Ol-ZmY" secondAttribute="topMargin" id="0Ue-ps-vZH"/>
+                                <constraint firstItem="vyd-8F-HWa" firstAttribute="leading" secondItem="m9U-Ol-ZmY" secondAttribute="leadingMargin" id="1QL-GD-T3b"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="vyd-8F-HWa" secondAttribute="bottom" id="F8A-jR-oGn"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="vyd-8F-HWa" secondAttribute="trailing" id="eu0-1k-RrL"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="BudgetItemCell" rowHeight="70" id="78F-7V-LLn" customClass="BudgetItemTableViewCell" customModule="Neverbroke" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="99.5" width="375" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="78F-7V-LLn" id="nXU-oR-HI7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="[categoryName]" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n3a-Zu-NEI">
+                                            <rect key="frame" x="15" y="11" width="267" height="48"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        </textView>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. 10" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1mn-6n-2fl">
+                                            <rect key="frame" x="290" y="24.5" width="70" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="4Ib-fF-30s"/>
+                                            </constraints>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                            <connections>
+                                                <action selector="amountTextFieldBegin:" destination="78F-7V-LLn" eventType="editingDidBegin" id="3sM-9Y-uZv"/>
+                                                <action selector="amountTextFieldEditingChanged:" destination="78F-7V-LLn" eventType="editingChanged" id="c3q-qQ-vTX"/>
+                                                <action selector="amountTextFieldEnd:" destination="78F-7V-LLn" eventType="editingDidEnd" id="ae2-aC-Qx7"/>
+                                                <action selector="amountTextFieldReturned:" destination="78F-7V-LLn" eventType="primaryActionTriggered" id="D9F-1R-ZpO"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="n3a-Zu-NEI" firstAttribute="top" secondItem="nXU-oR-HI7" secondAttribute="topMargin" id="ANA-TR-Hto"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="1mn-6n-2fl" secondAttribute="trailing" id="Ecv-Fc-Ugi"/>
+                                        <constraint firstItem="1mn-6n-2fl" firstAttribute="leading" secondItem="n3a-Zu-NEI" secondAttribute="trailing" constant="8" symbolic="YES" id="KDq-w0-BCC"/>
+                                        <constraint firstItem="n3a-Zu-NEI" firstAttribute="leading" secondItem="nXU-oR-HI7" secondAttribute="leadingMargin" id="Q6L-fg-AEF"/>
+                                        <constraint firstItem="n3a-Zu-NEI" firstAttribute="bottom" secondItem="nXU-oR-HI7" secondAttribute="bottomMargin" id="fsp-Sw-5SV"/>
+                                        <constraint firstItem="1mn-6n-2fl" firstAttribute="centerY" secondItem="nXU-oR-HI7" secondAttribute="centerY" id="qmd-yx-17u"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountTextField" destination="1mn-6n-2fl" id="ZTz-Rb-aXj"/>
+                                    <outlet property="descriptionTextView" destination="n3a-Zu-NEI" id="eB8-1I-BL3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bED-zM-urq" id="bHd-S3-xXa"/>
+                            <outlet property="delegate" destination="bED-zM-urq" id="4qR-Yf-3KN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Budget" id="c51-oV-dmF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dTg-lI-q2B">
+                            <connections>
+                                <action selector="addBudgetItem:" destination="bED-zM-urq" id="14n-Zh-n4C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zw6-xE-IE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5877.6000000000004" y="993.55322338830592"/>
+        </scene>
+        <!--Budget-->
+        <scene sceneID="4uz-gD-ldU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SLN-7s-lCB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Budget" image="Budget" id="m0g-HV-SJp"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nzf-dg-rec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bED-zM-urq" kind="relationship" relationship="rootViewController" id="fu2-3s-faY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWv-qq-ulP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4938.3999999999996" y="993.55322338830592"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Budget" width="25" height="25"/>
+    </resources>
+</document>
